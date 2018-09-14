@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+#background {
+    background-image: url("profile.jpeg");
+    background-repeat:no-repeat;
+    height: 100%;
+}
+
+
+#wrap {
+    width: 100%;
+    background-color: #1D31B6;
+}
+
+img {
+    width: 30%;
+}
+
+h1 {
+    font-size: 70px;
+    padding-right: 100px;
+    font-family: 'VT323', monospace;
+}
+
+#text {
+    width: 70%;
+    float: left;
+    text-align: right;
+}
+
+.holder {
+    float: left;
+    width: 70%;
+    bottom: 0;
+    position: absolute;
+}
+
+#links {
+    list-style: none;
+    height: 100px;
+}
+
+li {
+    display: inline;
+    font-family: 'VT323', monospace;
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: yellow;
+    color:  #1D31B6;
+}
