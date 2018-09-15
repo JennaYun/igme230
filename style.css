@@ -2,8 +2,10 @@ body, html {
     margin: 0;
     height: 100%;
     width: 100%;
+    background-color: yellow;
+    font-family: 'VT323', monospace;
+    
 }
-
 
 .background {
        background-image: url('profile.jpeg');
@@ -12,7 +14,6 @@ body, html {
        background-repeat: no-repeat;
        background-position: right;
 }
-
 
 #wrap {
     width: 100%;
@@ -25,9 +26,19 @@ img {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 100px;
     padding-right: 150px;
-    font-family: 'VT323', monospace;
+}
+
+h1, li, a {
+    color:  #1D31B6;
+}
+
+h2 {
+    padding-left: 40px;
+    font-size:30px;
+    width: 20%;
+
 }
 
 #text {
@@ -51,16 +62,21 @@ h1 {
 
 li {
     display: inline;
-    font-family: 'VT323', monospace;
+
     padding-right: 30px;
     font-size: 25px;
 }
 
 a {
     text-decoration: none;
+    color:  #1D31B6;
 }
 
 a:hover {
     background-color: yellow;
     color:  #1D31B6;
+}
+
+img.pencil {
+    width: 10%;
 }
