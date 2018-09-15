@@ -2,8 +2,9 @@ body, html {
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: yellow;
+    background-color: #FFFEC8;
     font-family: 'VT323', monospace;
+    text-align:left;
     
 }
 
@@ -28,6 +29,8 @@ img {
 h1 {
     font-size: 100px;
     padding-right: 150px;
+    padding-left: 40px;
+
 }
 
 h1, li, a {
@@ -44,13 +47,12 @@ h2 {
 #text {
     width: 70%;
     float: left;
-    text-align: right;
 }
 
 .holder {
     float: left;
     width: 70%;
-    bottom: 100px;
+    bottom: 40px;
     position: absolute;
 }
 
@@ -74,7 +76,7 @@ a {
 
 a:hover {
     background-color: yellow;
-    color:  #1D31B6;
+    color:  #ED2333;
 }
 
 img.pencil {
