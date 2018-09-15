@@ -4,7 +4,7 @@ body, html {
     width: 100%;
     background-color: #FFFEC8;
     font-family: 'VT323', monospace;
-    text-align:left;
+    text-align:right;
     
 }
 
@@ -23,25 +23,20 @@ body, html {
 }
 
 img {
-    width: 30%;
+   float: left;
+   width: 10%;
 }
 
 h1 {
     font-size: 100px;
-    padding-right: 150px;
+    padding-right: 20%;
     padding-left: 40px;
+    
 
 }
 
 h1, li, a {
     color:  #1D31B6;
-}
-
-h2 {
-    padding-left: 40px;
-    font-size:30px;
-    width: 20%;
-
 }
 
 #text {
@@ -56,17 +51,20 @@ h2 {
     position: absolute;
 }
 
-#links {
+#links, ul {
     list-style: none;
     min-height: 100px;
-    padding-right: 10%;
+    padding-right: 20%;
 }
 
+h2 {
+    font-size: 30px;
+    padding-right: 20%;
+}
 li {
     display: inline;
-
-    padding-right: 30px;
     font-size: 25px;
+    margin-left: 30px;
 }
 
 a {
