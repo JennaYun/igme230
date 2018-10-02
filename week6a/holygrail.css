@@ -23,6 +23,7 @@ Flexbox Formatting
     margin: 0 auto;
     max-width: 95vw; 
     flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
@@ -32,6 +33,7 @@ main {
     background-color: #ccc;
     margin: .5rem 0; 
     flex-direction: row;
+    flex: 1;
 }
 
 #wrapper, main {
