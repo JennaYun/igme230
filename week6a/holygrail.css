@@ -1,0 +1,86 @@
+/************************
+General Formatting Rules 
+************************/
+
+* { box-sizing: border-box; }
+
+html {
+    /* set base font-size for document; will be used for rem calculations */ 
+    font-size: 16px;
+}
+
+html, body, #wrapper {
+    /* resets margins to prevent sizing issues */
+    margin: 0;
+}
+
+/*****************
+Flexbox Formatting  
+*****************/
+
+#wrapper {
+    /* centers container in viewport */
+    margin: 0 auto;
+    max-width: 95vw; 
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+ 
+    /* formatting for visual clarity */
+    border: 1px solid black; 
+    background-color: #ccc;
+    margin: .5rem 0; 
+    flex-direction: row;
+    flex: 1;
+}
+
+#wrapper, main {
+    display: flex;
+}
+
+header, footer {
+
+    /* formatting for visual clarity */
+    background-color: lightblue;
+    padding: 0 .5rem;
+}
+
+article, nav, aside {
+
+    /* formatting for visual clarity */
+    border: 1px dotted black;
+    background-color: #fff;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+aside, nav {
+    flex: 0 0 12rem;
+}
+
+article {
+    flex: 1;
+}
+
+nav {
+    order: -1;
+}
+
+@media screen and (max-width: 36rem){
+    main {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #wrapper {
+        max-width: none;
+    }
+
+    nav, aside, article {
+        order: 0;
+        flex: 1;
+        margin: .5rem 0;
+    }
+ }
