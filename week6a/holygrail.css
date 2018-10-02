@@ -55,3 +55,32 @@ article, nav, aside {
     margin: .5rem;
     padding: .5rem;
 }
+
+aside, nav {
+    flex: 0 0 12rem;
+}
+
+article {
+    flex: 1;
+}
+
+nav {
+    order: -1;
+}
+
+@media screen and (max-width: 36rem){
+    main {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #wrapper {
+        max-width: none;
+    }
+
+    nav, aside, article {
+        order: 0;
+        flex: 1;
+        margin: .5rem 0;
+    }
+ }
