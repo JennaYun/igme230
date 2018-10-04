@@ -43,6 +43,18 @@ img {
     border: 2px;
     border-radius: 5px;
 }
+
+main {
+    max-width: 95vw;
+    margin: .5rem auto;
+}
+
+@supports (display: grid) {
+    .warning {
+        display: none;
+    }
+}
+
 /**************
 Grid Formatting
 **************/
