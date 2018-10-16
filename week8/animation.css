@@ -71,17 +71,30 @@ main {
     max-width: 95vw;
     /* provide space between main and the header and footer */
     margin: 1rem 0;
-    animation: entrance .5s linear forwards backwards;
-
-
+    animation: entrance .5s linear both;
 }
 
+main img {
+    transition: all 2s ease-in-out;
+}
+
+main img:hover {
+    transform: scale(1.2);
+}
 /**************
  CSS Animation 
 **************/
 
-@keyframe entrance {
-    from{transform: translateX(-2000px);}
-    to {transform: translateX(1350px);}
+a:hover .fa { 
+    animation: spin .5s linear both;
 }
 
+
+@keyframe entrance {
+    0% {transform: translateX(-2000px);}
+    100% {transform: translateX(0px);}
+}
+
+@keyframe spin {
+    100%{transform: rotateY(360deg);}
+}
