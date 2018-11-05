@@ -1,0 +1,225 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+    width: 100%;
+    height: 500px;
+    
+}
+.section {
+  width: 100%;
+}
+.name {
+    padding-right: 20px;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.section .container {
+  padding: 30px 0 0;
+}
+
+.section.bg {
+  background: #f7f7f7;
+}
+
+
+.header {
+  line-height: 50px;
+  width: 100%;
+  transition: line-height 0.2s linear, box-shadow 0.2s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #f94d44;
+}
+
+
+#logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  float: left;
+  height: 40px;
+  width: 170px;
+  margin-left: 5px;
+}
+
+ul.nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav li {
+  float: left;
+  position: relative;
+
+}
+
+ul.nav li a {
+  transition: color 0.2s linear;
+  font-size: 18px;
+    color: white;
+}
+
+ul.nav li:hover a {
+  color: black;
+}
+
+ul.nav li a {
+  padding: 21px;
+  text-decoration: initial;
+}
+.title {
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.wrapbox{
+  height: 100%;
+  width :100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+body {
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+figure {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: black;
+	overflow: hidden;
+    opacity: 1;
+    margin-bottom: 50px;
+}
+
+.content figure {
+	background: black;
+}
+
+.content figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    display: block;
+}
+
+.content figure:hover img {
+	opacity: 0.3;
+}
+
+.title {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+   text-align:justify;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -50%;
+}
+
+  .content:hover  > div{
+     opacity: 1;
+   }
+
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .content {
+    width: 48%;
+    margin: 1%;
+  }
+  .header {
+    height: auto;
+  }
+  #logo {
+    position: initial;
+    float: none;
+    display: block;
+    transform: none;
+    margin: 10px auto 0 auto;
+  }
+  ul.nav {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul.nav li {
+    float: initial;
+    display: inline-block;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+    img.logo {
+        margin-left: 30%;
+    }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media all and (max-width:450px) {
+  .content{
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 5%;
+  }
+    
+    img.moodboard {
+        float: left;
+    }
+    
+   ul.nav li a{
+        margin: 0;
+        padding: 10px;
+    }
+    
+    img.logo {
+        margin-left: 30%;
+    }
+}
+
+

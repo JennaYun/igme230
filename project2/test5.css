@@ -1,0 +1,192 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Placing the dropdown menu*/
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+----------------------
+
+.section {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+/*logo in nav. Making sure it has a proper size for the nav*/
+#logo {
+  position: absolute;
+  float: left;
+  margin-left: 8%;
+}
+
+/*wrapping title, explain, and info*/
+.description {
+width: 50%;
+margin: auto;
+margin-top: 200px;
+margin-bottom: 100px;
+
+}
+
+/*Explain what project it is*/
+p.explain {
+    width: 55%;
+    float: left;
+}
+
+p.info {
+    width: 40%;
+    float: right;
+}
+
+/*displaying final design.*/
+.showimg {
+width: 80%;
+margin: auto;
+margin-top: 200px;
+margin-bottom: 100px;
+}
+
+/*h1.title and h1.finaldesign will be 38px, Roboto Condensed, and have 300 weight*/
+h1.title,
+h1.finaldesign{
+  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 38px;
+}
+
+img.final {
+    width: 50%;
+    margin-left: 25%;
+}
+
+p{
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+/*make h1.finaldesign in the center*/
+h1.finaldesign {
+    text-align: center;
+}
+
+/*adding shadow behind images*/
+img.final{
+  box-shadow: 0 4px 17px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+
+/*Making screen responsive - tablet*/
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+    
+/*Holding logo(making sure logo will not disappear)*/
+  #logo {
+        width: 18%;
+        float: left;
+    }
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/*Making screen responsive - tablet*/
+@media (max-width:450px) {
+    #logo {
+        width: 20%;
+        float: left;
+    }
+    
+    img.final {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .description {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 10%;        
+    }
+    
+    p.explain,
+    p.info{
+        width: 100%;
+    }
+}
