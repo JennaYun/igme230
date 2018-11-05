@@ -184,6 +184,11 @@ figure {
    }
 
 
+p.box {
+    width: 50%;
+    line-height: 1.5em;
+}
+
 @media all and (max-width: 768px) {
   .container {
     width: 95%;

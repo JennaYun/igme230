@@ -140,7 +140,7 @@ h1.name {
 }
 
 p{
-    line-height: 1.5em;
+    line-height: 1.5xem;
     font-size: 16px;
 }
 
@@ -172,6 +172,8 @@ img.final{
     width: 750px;
   }
 }
+
+
 
 /*Making screen responsive - tablet*/
 @media (max-width:450px) {
