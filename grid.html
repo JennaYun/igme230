@@ -8,15 +8,33 @@
             <style>
                 .mygrid {
                     display: grid;
+                    height: 100vh;
                     grid-template-columns: 150px 1fr 1fr;
-                    grid-template-rows: 100px 1fr 1fr;
+                    grid-template-rows: 100px 1fr 1fr 50px;
+                }
+
+                .mygrid div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: pink;
+                    border: 1px dotted green;
+                }
+
+                .titlebar {
+                    grid-column: 1 / span 3;
+
+                }
+                
+                .name {
+
                 }
             </style>
         </head>
 
         <body>
             <div class="mygrid">
-                <div>Cell 1</div>
+                <div class="titlebar">Cell 1</div>
                 <div>Cell 2</div>
                 <div>Cell 3</div>
                 <div>Cell 4</div>
