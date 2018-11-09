@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery exercise</title>
+    <style>
+        #panel1, #panel2{
+            display: flex;
+            justify-content: center;
+            color: black;
+            border: 2px;
+            margin-top: 10px;
+
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+        }
+
+        #panel2{
+            position: absolute;
+        }
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> 
+</head>
+<body>
+    <button id="show">show</button> <button id="hide">hide</button>
+    
+    <div id="panel1">
+        I have text right here!
+    </div>
+    <div id="panel2">
+        more text!
+        </div>
+    <script>        
+        $("#hide").click(function(){
+            $("#panel1").hide();
+        });
+        
+        $("#show").click(function(){
+            $("#panel1").show();
+    });
+    </script>
+</body>
+</html>
