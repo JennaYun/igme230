@@ -1,0 +1,116 @@
+/*********************************
+General Formatting (Do Not Change)
+*********************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #86af49;
+}
+
+nav,
+aside,
+article {
+    padding: .5rem;
+}
+
+nav, aside {
+    background-color: #b5e7a0;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+article {
+    grid-area: article;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#wrapper {
+    display: grid;
+    width: 100vw;
+
+    grid-template-columns: 100%; 
+    grid-template-rows: 1fr;  
+    grid-template-areas: 
+    "header" 
+    "nav" 
+    "article"
+    "aside"
+    "footer"; 
+}
+
+header, 
+footer {
+    display: flex;
+    justify-content: center;/*horizontal*/
+    align-items: center;/*vertical*/
+}
+
+.menuitem {
+    background-color: white;
+    margin: 0;
+    border-top: 1px solid white;
+}
+
+.submenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: hidden;
+}
+
+.submenu li {
+    padding-left: .25rem;
+    background-color: lightgray;
+}
+
+@media only screen and (min-width: 600px) {
+    #wrapper {
+        display: grid;
+        width: 90vw;
+        max-width: 1200px;
+        min-height: 100vh;
+
+        margin: 0 auto;
+
+        grid-template-columns: 1fr 2fr 200px;
+        grid-template-rows: 4rem 1fr 3rem;
+        grid-template-areas: 
+        "header header header" 
+        "aside article nav" 
+        "footer footer footer";
+    }
+}
