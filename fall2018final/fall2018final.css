@@ -97,11 +97,11 @@ nav {
     width: 6rem;
     background-color: #ccc;
     justify-content: space-around;
-}
+} 
 
 .items {
     list-style-type: none;
-    margin: 0;
+    margin: 0; 
     padding: 0;
     display: hidden;
     background-color: #ddd;
