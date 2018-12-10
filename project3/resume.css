@@ -90,15 +90,6 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  
-
-@media print {
-
-    footer {page-break-after: always;}
-
-    body {
-        color: lightcoral;
-    }
 
     .container {
         position: relative;
@@ -129,12 +120,25 @@ footer {
     font-size: 30px;
     margin-top: -50%;
 
-    
 }
 
 
-}
 
+
+@page {
+    size: 5.5in 8.5in;  
+    margin: 70pt 60pt 70pt;
+  }
+  
+@page:first {
+    size: 5.5in 8.5in;  
+    margin: 0;
+  }
+
+
+p.box {
+    margin-bottom: 50px;  
+}
 .name {
     padding-right: 20px;
 }
