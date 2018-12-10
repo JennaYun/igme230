@@ -158,7 +158,7 @@ article {
 footer {
     grid-area: footer;
     background-color: #ED5250;
-    height: 100ppx;
+    min-height: 100px;
 }
 
 #return_button {

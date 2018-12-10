@@ -74,7 +74,28 @@ body {
     
 }
 
+footer {
+    grid-area: footer;
+    background-color: #ED5250;
+    min-height: 100px;
+}
+
+.smoothScroll {
+    text-decoration: none;
+    font-family: Segoe UI;
+    color: white;
+    margin: 24px;
+    text-align: center;
+    margin-left:46%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+
 @media print {
+
+    footer {page-break-after: always;}
+
     body {
         color: lightcoral;
     }
