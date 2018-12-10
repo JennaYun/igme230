@@ -1,0 +1,254 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #F04F4B;;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.top {
+    width: 100%;
+    height: 500px;
+    
+}
+
+@media print {
+    body {
+        color: lightcoral;
+    }
+
+    .container {
+        position: relative;
+        width: 1170px;
+        margin: 0 auto;
+        margin-left: 10%;
+        color: #444;
+        font-size: 14px;
+        font-weight: 300;
+        font-family: Roboto, 'Open Sans', Arial, sans-serif;
+        overflow: hidden;
+      }
+
+    p.box {
+        width: 50%;
+        line-height: 1.5em;
+    }
+    
+
+    .title {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+   text-align:justify;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -50%;
+
+    
+}
+
+
+}
+
+.name {
+    padding-right: 20px;
+}
+
+
+
+.section .container {
+  padding: 30px 0 0;
+}
+
+
+#logo {
+  position: absolute;
+  float: left;
+  margin-left: 8%;
+}
+
+.content {
+  float: left;
+  padding: 0;
+  margin: 0;
+  position: relative;
+    width: 48%;
+  margin: 0 1%;
+  margin-bottom: 100px;
+}
+
+
+.wrapbox{
+  height: 100%;
+  width :100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+body {
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+figure {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: black;
+	overflow: hidden;
+    opacity: 1;
+    margin-bottom: 50px;
+}
+
+.content figure {
+	background: black;
+}
+
+.content figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    display: block;
+}
+
+.content figure:hover img {
+	opacity: 0.3;
+}
+
+  .content:hover  > div{
+     opacity: 1;
+   }
+
+
+
+
+
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .content {
+    width: 48%;
+    margin: 1%;
+  }
+
+  #logo {
+    width: 18%;
+    float: left;
+    }
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+    img.logo {
+        margin-left: 30%;
+    }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media all and (max-width:450px) {
+  .content{
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 5%;
+  }
+    
+    img.moodboard {
+        float: left;
+    }
+    
+    img.logo {
+        margin-left: 30%;
+    }
+    
+    #logo {
+        width: 20%;
+        float: left;
+    }
+}
+
+
