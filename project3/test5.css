@@ -241,3 +241,19 @@ iframe {
         width: 100%;
     }
 }
+
+@media all and (max-width: 320px) {
+    
+    #mygrid {
+        display: grid;
+        width: 100vw;
+    
+        grid-template-columns: 1fr; 
+        grid-template-rows: 46px 1fr 100px; 
+        grid-template-areas: 
+        "header header header" 
+        ". article . "
+        "footer footer footer"; 
+    }
+    
+  }
