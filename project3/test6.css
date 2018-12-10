@@ -208,7 +208,6 @@ article {
 }
 
 
-
 footer {
     grid-area: footer;
     background-color: #ED5250;
@@ -232,7 +231,9 @@ img.sketch {
   }
 
 
-  
+.section {
+      margin-bottom: 100px;
+  }
 /*Making screen responsive - tablet*/
 @media all and (max-width: 768px) {
   .container {
