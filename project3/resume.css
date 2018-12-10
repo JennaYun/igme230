@@ -80,6 +80,7 @@ footer {
     min-height: 100px;
 }
 
+/*Stylizing scroll text*/
 .smoothScroll {
     text-decoration: none;
     font-family: Segoe UI;
@@ -124,7 +125,7 @@ footer {
 
 
 
-
+/*css for creating print-friendly page*/
 @page {
     size: 5.5in 8.5in;  
     margin: 70pt 60pt 70pt;
@@ -211,7 +212,19 @@ figure {
    }
 
 
+   .navbar {
+    grid-area: header;
+}
 
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #ED5250;
+    min-height: 100px;
+}
 
 
 
@@ -238,6 +251,19 @@ figure {
     img.logo {
         margin-left: 30%;
     }
+
+    #mygrid {
+        display: grid;
+        width: 100vw;
+    
+        grid-template-columns: 1fr 2fr 1fr; 
+        grid-template-rows: 46px 1fr 100px; 
+        grid-template-areas: 
+        "header header header" 
+        ". article ."
+        "footer footer footer"; 
+    }
+    
 }
 
 @media all and (min-width: 992px) {
@@ -276,4 +302,19 @@ figure {
     }
 }
 
-
+/*for mobile*/
+@media all and (max-width: 320px) {
+    
+    #mygrid {
+        display: grid;
+        width: 100vw;
+    
+        grid-template-columns: 1fr; 
+        grid-template-rows: 46px 1fr 100px; 
+        grid-template-areas: 
+        "header header header" 
+        ". article . "
+        "footer footer footer"; 
+    }
+    
+  }

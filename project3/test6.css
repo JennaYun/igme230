@@ -230,7 +230,7 @@ img.sketch {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  
+
 
 .section {
       margin-bottom: 100px;
@@ -291,7 +291,7 @@ img.sketch {
         width: 100%;
     }
 }
-
+/*for mobile*/
 @media all and (max-width: 320px) {
    p {
        width: 80%;
