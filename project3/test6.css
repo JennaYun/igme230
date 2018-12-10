@@ -219,6 +219,11 @@ p.explain {
     margin-bottom: 200px;
 }
 
+img.sketch {
+    width: 95%;
+}
+
+
 /*Making screen responsive - tablet*/
 @media all and (max-width: 768px) {
   .container {
