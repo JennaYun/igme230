@@ -42,6 +42,10 @@ section, header, footer {
 /**************
 Your Formatting
 ***************/
+body {
+    display: flex;
+    justify-content: center;
+}
 
 #pagegrid {
     display: grid;
@@ -84,6 +88,10 @@ header {
     background-color: white;
 }
 
+footer {
+    grid-area: footer;
+    background-color: lightblue;
+}
 
 header,
 footer {
@@ -92,7 +100,27 @@ footer {
     align-items: center;/*vertical*/
 }
 
+
 li:hover {
     background-color: lightpink;
-    color: hotpink;
+    color: magenta;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 600px) {
+    #pagegrid {
+        display: grid;
+        width: 100vw;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto auto auto auto 30px;
+        grid-template-areas: 
+        "header"
+        "story"
+        "placeholder"
+        "extracredit"
+        "nav"
+        "footer"
+    }
 }
