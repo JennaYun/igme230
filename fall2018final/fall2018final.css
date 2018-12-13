@@ -35,107 +35,60 @@ aside {
 Your Formatting
 ***************/
 header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nav;
-}
-
-article {
-    grid-area: article;
-}
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: footer;
-}
-
-#yourgrid {
-    display: grid;
-    width: 100vw;
-
-    grid-template-columns: 100%; 
-    grid-template-rows: 75px 30px auto auto 30px;  
-    grid-template-areas: 
-    "header" 
-    "nav" 
-    "article"
-    "aside"
-    "footer";
-}
-
-header, 
-footer {
+    grid-area: h;
     background-color: lightpink;
 }
 
-article {
-    background-color: lightcyan;
+nav {
+    grid-area: n;
+    background-color: lavenderblush;
+    display: flex;
+    z-index: 2;
 }
 
 aside {
+    grid-area: as;
     background-color: lightblue;
 }
 
-nav {
-    background-color: lavenderblush;
+#extracredit {
+    grid-area: ex;
 }
 
-header,
-footer,
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+article {
+    grid-area: ar;
+    background-color: lightcyan;
 }
 
-.menu {
-    width: 6rem;
-    background-color: #ccc;
-    justify-content: space-around;
-} 
-
-.items {
-    list-style-type: none;
-    margin: 0; 
-    padding: 0;
-    display: hidden;
-    background-color: #ddd;
-}
-
-.items li {
-    padding-left: .25rem;
-    background-color: #ddd;
+footer {
+    grid-area: f;
+    background-color: lightpink;
 }
 
 
+#yourgrid {
+    display: grid;
 
+    width: 90vw;
+    max-width: 1000px;
+    min-height: 100vh;
+    grid-template-rows: 75px 30px 1fr 2fr 50px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "h h"
+    "n n "
+    "ar as"
+    "ar ex"
+    "f f ";
+}
 
-/*desktop*/
-@media only screen and (max-width: 600px) {
-  
+@media screen and (max-width: 600px) {
     #yourgrid {
-        display: grid;
-        width: 90vw;
-        max-width: 1000px;
-        min-height: 100vh;
-    
-        margin: 0 auto;
-    
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 75px 30px 1fr 50px 1fr;
-        grid-template-areas: 
-            "header header" 
-            "nav nav"
-            "aside article" 
-            "#extracredit #extracredit"
-            "footer footer";
-    
+        width: 100vw;
+
+        grid-tem
     }
-    
-    }
+}
+
+
     
